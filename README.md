@@ -4,16 +4,14 @@
 
 ### Inventory, circulation and operational management for modern library workflows
 
-<a href="https://github.com/tahakubilay/library-management-system">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=900&center=true&vCenter=true&width=900&lines=Catalog+%E2%86%92+Stock+%E2%86%92+Circulation+%E2%86%92+Operations;Library+workflows+beyond+simple+book+records;One+system+for+inventory+and+day-to-day+management" alt="Animated project overview" />
-</a>
+<img src="./assets/hero.svg" alt="Animated project header" />
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Taha%20Kubilay-181717?style=for-the-badge&logo=github)](https://github.com/tahakubilay)
 [![Repository](https://img.shields.io/badge/Repository-Library%20Management-0A66C2?style=for-the-badge&logo=github)](https://github.com/tahakubilay/library-management-system)
-[![Type](https://img.shields.io/badge/Type-Operational%20System-16A34A?style=for-the-badge)](#-overview)
-[![Status](https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge)](#-project-status)
+![Type](https://img.shields.io/badge/Type-Operational%20System-16A34A?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge)
 
 <br/>
 
