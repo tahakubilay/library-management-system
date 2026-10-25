@@ -2,67 +2,33 @@
 
 # Library Management System
 
-### Bestands-, Ausleih- und Betriebsmanagement für moderne Bibliotheksabläufe
+### Katalog-, Bestands-, Ausleih- und Betriebsmanagement
 
 <img src="./assets/hero.svg" alt="Animierter Projektkopf" />
 
 <p><a href="./README.md">English</a> · <a href="./README.de.md"><strong>Deutsch</strong></a> · <a href="./README.tr.md">Türkçe</a></p>
 
 <p>
-<a href="https://github.com/tahakubilay"><img src="https://img.shields.io/badge/Portfolio-Taha%20Kubilay-181717?style=for-the-badge&logo=github" alt="Portfolio" /></a>
-<a href="https://github.com/tahakubilay/library-management-system"><img src="https://img.shields.io/badge/Source-Library%20Management-0A66C2?style=for-the-badge&logo=github" alt="Repository" /></a>
-<img src="https://img.shields.io/badge/Type-Operational%20System-16A34A?style=for-the-badge" alt="Operational system" />
-<img src="https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge" alt="Status" />
+  <a href="https://github.com/tahakubilay"><img src="https://img.shields.io/badge/Taha%20Kubilay-GitHub-181717?style=for-the-badge&logo=github" alt="Taha Kubilay auf GitHub" /></a>
+  <a href="https://github.com/tahakubilay/library-management-system"><img src="https://img.shields.io/badge/Repository-Library%20Management-0A66C2?style=for-the-badge&logo=github" alt="Repository" /></a>
 </p>
 
 </div>
 
 ---
 
-## ✨ Auf einen Blick
+## Überblick
 
-| | |
-|---|---|
-| 📚 **Kerndomäne** | Bibliotheksbestand und Katalogverwaltung |
-| 🔄 **Betrieb** | Ausleihe und tägliche operative Abläufe |
-| 📦 **Inventar** | Bestandstransparenz und Sammlungsverfolgung |
-| 🧑‍💼 **Administration** | Zentrale operative Verwaltung |
-| 🧠 **Engineering** | Datenintegrität, Workflow-Modellierung und State-Konsistenz |
-| 🚀 **Portfolio-Plan** | Screenshots, Demo-Daten und vollständige technische Dokumentation nach finaler Bereinigung |
+Das Library Management System ist eine operative Plattform für Katalogdaten, physischen Bestand, Ausleihprozesse und administrative Transparenz.
 
-> [!NOTE]
-> Dieses Repository präsentiert das Projekt aktuell auf **Portfolio-Ebene**. Die finale technische Dokumentation wird direkt aus dem bereinigten Code erzeugt, damit Implementierungsdetails korrekt bleiben.
+Das Projekt behandelt eine Bibliothek als operatives System und nicht nur als Bücherdatenbank. Kataloginformationen, physische Exemplare, Ausleihstatus und historische Aktivitäten müssen konsistent zusammenarbeiten.
 
-## 🔎 Überblick
-
-Dieses Projekt ist als Bibliotheksbetriebssystem konzipiert, nicht als einfache Bücherdatenbank.
-
-Die Plattform verbindet Kataloginformationen, physischen Bestand, Ausleih- und Rückgabeprozesse sowie administrative Transparenz in einer Umgebung.
-
-Das Hauptziel ist, den physischen und operativen Zustand der Bibliothek leichter verständlich und verwaltbar zu machen.
-
-## 💡 Kernkonzept
-
-```text
-Katalog
-   ↓
-Inventar / Exemplare
-   ↓
-Ausleihe / Zirkulation
-   ↓
-Operative Historie
-   ↓
-Administrative Transparenz
-```
-
-Dadurch entsteht ein konsistenter Fluss von dem, was die Bibliothek besitzt, bis dazu, wie Ressourcen verwendet und nachverfolgt werden.
-
-## 🔄 High-Level-Operativer Ablauf
+## Operatives Modell
 
 ```mermaid
 flowchart LR
-    CATALOG[Katalog] --> STOCK[Inventar / Bestand]
-    STOCK --> CIRC[Ausleih-Workflow]
+    CATALOG[Katalog] --> STOCK[Inventar / Exemplare]
+    STOCK --> CIRC[Ausleihe / Zirkulation]
     CIRC --> HISTORY[(Operative Historie)]
     HISTORY --> REPORT[Reporting / Transparenz]
     ADMIN[Administration] --> CATALOG
@@ -70,27 +36,24 @@ flowchart LR
     ADMIN --> CIRC
 ```
 
-> [!IMPORTANT]
-> Exakte Entitäten, Ausleihregeln, Berechtigungen, Datenbankbeziehungen und API-Flows werden aus dem finalisierten Code dokumentiert und nicht vorab geschätzt.
-
-## ⚡ Kernfunktionen
+## Kernfunktionen
 
 | Bereich | Zweck |
 |---|---|
-| 📚 **Katalogverwaltung** | Bibliotheksressourcen und bibliografische Datensätze organisieren |
-| 📦 **Bestandsverfolgung** | Transparenz über physische Exemplare und Bestand erhalten |
-| 🔄 **Zirkulation** | Operative Bewegung von Bibliotheksressourcen unterstützen |
-| 🧾 **Historie** | Nützlichen operativen Kontext über Zeit bewahren |
-| 🧑‍💼 **Administration** | Management-Workflows zentralisieren |
-| 🔎 **Suche & Transparenz** | Nutzern und Administratoren relevante Datensätze zugänglich machen |
-| 📊 **Reporting** | Operative Daten in nutzbare Managementinformationen umwandeln |
-| 🧱 **Datenintegrität** | Bestand und Workflow-Zustände konsistent halten |
+| **Katalogverwaltung** | Bibliotheksressourcen und bibliografische Datensätze organisieren |
+| **Bestandsverfolgung** | Transparenz über physische Exemplare und Bestand erhalten |
+| **Zirkulation** | Ausleihe, Rückgabe und Ressourcenbewegungen unterstützen |
+| **Historie** | Operativen Kontext über Zeit bewahren |
+| **Administration** | Management-Workflows zentralisieren |
+| **Suche & Transparenz** | Relevante Datensätze für Nutzer und Administratoren zugänglich machen |
+| **Reporting** | Operative Datensätze in nutzbare Managementinformationen umwandeln |
+| **Datenintegrität** | Bestand und Workflow-Zustände konsistent halten |
 
-## 🧠 Engineering-Fokus
+## Engineering-Fokus
 
-Auch ein Bibliothekssystem wird komplex, sobald physischer Bestand und operative Historie synchron bleiben müssen.
+Das Projekt konzentriert sich auf Konsistenzprobleme, die entstehen, wenn physischer Bestand und operative Historie synchron bleiben müssen.
 
-Das Projekt zeigt Arbeit rund um:
+Schwerpunkte:
 
 - Domänenmodellierung
 - Bestandszustand
@@ -102,51 +65,16 @@ Das Projekt zeigt Arbeit rund um:
 - Reporting
 - Wartbare Anwendungsstruktur
 
-## 🖼️ Produktvorschau
+## Daten & Datenschutz
 
-| Katalog | Inventar | Betrieb |
-|---|---|---|
-| 📚 Demnächst | 📦 Demnächst | 🔄 Demnächst |
-
-Die finale Portfolio-Version wird enthalten:
-
-- Reale Screenshots
-- Kurzes Workflow-GIF
-- Synthetische Katalogdaten
-- Architekturdiagramme
-- Datenbank-/Domänenmodell
-- Demo-Anleitung
-
-## 🚀 Demo
-
-Nach Finalisierung kann eine portfolio-sichere Demo mit synthetischen Bibliotheksdaten veröffentlicht werden.
-
-Die Demo wird reale Produktionsdatensätze vermeiden und repräsentative Workflows zeigen.
-
-## 🛣️ Projektstatus
-
-- [x] Öffentliches Portfolio-Repository
-- [x] Produktpositionierung
-- [x] High-Level-Operationsarchitektur
-- [ ] Finale Codebereinigung
-- [ ] Tatsächlichen Tech-Stack dokumentieren
-- [ ] Screenshots ergänzen
-- [ ] Workflow-GIF ergänzen
-- [ ] Domänen-/Datenbankdiagramm ergänzen
-- [ ] Installationsanleitung ergänzen
-- [ ] Synthetische Demo-Daten ergänzen
-- [ ] Öffentliche Demo deployen
-
-## 💡 Warum dieses Projekt wichtig ist
-
-Dieses Projekt zeigt, wie eine scheinbar einfache Domäne zu einem echten operativen System wird, sobald **Bestandszustand, Zirkulation und historische Konsistenz** gemeinsam funktionieren müssen.
-
-`Inventory Systems` · `Operational Software` · `Workflow Design` · `Data Modelling` · `Full-Stack Engineering`
+Das öffentliche Repository stellt das System dar, ohne private operative Datensätze oder reale Nutzerdaten offenzulegen.
 
 ---
 
 <div align="center">
 
 ### Entwickelt von [Taha Kubilay](https://github.com/tahakubilay)
+
+`Inventory Systems` · `Operational Software` · `Workflow Design` · `Data Modelling` · `Full-Stack Engineering`
 
 </div>
